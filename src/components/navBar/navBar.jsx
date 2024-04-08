@@ -1,10 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-
-const navBar = () => {
+const Navbar = () => {
   return (
-    <div>navBar</div>
-  )
-}
+    <>
+    </>
+  );
+};
 
-export default navBar
+export default Navbar;

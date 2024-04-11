@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
-import './navBar.css';
+import React from "react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import "./navBar.css";
+import SearchBar from "../searchBar/searchBar";
 
 const Navbar = () => {
   return (
@@ -14,8 +15,12 @@ const Navbar = () => {
 
       <ul className="categories-menu">
         {/* Usa Link en lugar de <a> */}
-        <li><Link to="/categoria1">Categoría 1</Link></li>
-        <li><Link to="/categoria2">Categoría 2</Link></li>
+        <li>
+          <Link to="/categoria1">Categoría 1</Link>
+        </li>
+        <li>
+          <Link to="/categoria2">Categoría 2</Link>
+        </li>
         {/* Agrega más categorías según tu necesidad */}
       </ul>
 
@@ -23,10 +28,7 @@ const Navbar = () => {
         <Link to="/best-sellers">Lo más vendido</Link>
       </div>
 
-      <div className="search-bar">
-        <input type="text" placeholder="Buscar..." />
-        <button type="submit">Buscar</button>
-      </div>
+      <SearchBar />
 
       <div className="user">
         <Link to="/perfil">Usuario</Link>

@@ -1,46 +1,44 @@
 /* Navbar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-  .logo img {
-    width: 100px; /* Ajusta el tamaño del logo según tu necesidad */
-  }
-  
-  .categories-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .categories-menu li {
-    margin-right: 20px;
-  }
-  
-  .search-bar input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .search-bar button {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  
-  .user,
-  .language,
-  .cart {
-    margin-left: 10px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(244, 102, 0, 0.979); /* Cambiamos el color a anaranjado */
+  color: #fff;
+  padding: 15px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
+  font-family: 'Arial', sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
+}
+
+.logo img {
+  width: 100px;
+}
+
+.categories-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-menu li {
+  margin-right: 20px;
+}
+
+
+/* Eliminamos el subrayado de los enlaces */
+/* Estilos para los enlaces del menú */
+.navbar a {
+  padding: 10px 20px; /* Puedes ajustar los valores según sea necesario */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para los enlaces del menú al pasar el cursor */
+.navbar a:hover {
+ background-color: orange;
+}
+

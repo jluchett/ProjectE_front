@@ -1,13 +1,62 @@
-.search-bar input {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
+/* SearchBar.css */
+
+.search-bar {
+  display: flex;
+  position: relative;
+}
+
+.search-input {
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.search-button {
+  border: none;
+  cursor: pointer;
+  background-color: #3f3f3f;
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+  margin-left: -40px; /* Para superponer ligeramente el botón sobre el input */
+  transition: background-color 0.3s ease;
+}
+
+.search-button svg {
+  fill: #fff;
+}
+
+.search-button:hover {
+  background-color: #4f4f4f; /* Cambia el color al pasar el cursor */
+}
+
+.search-button:active {
+  transform: scale(0.95); /* Escala ligeramente el botón al hacer clic */
+}
+
+.search-button svg {
+  fill: #fff;
+}
+.search-button svg:hover {
+  fill: orange
+}
+
+/* Animación de pulsación */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
   }
-  
-  .search-bar button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    cursor: pointer;
+  50% {
+    transform: scale(1.05);
   }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+/* Aplicar la animación de pulsación al hacer clic */
+.search-button:active {
+  animation-name: pulse;
+  animation-duration: 0.3s;
+}

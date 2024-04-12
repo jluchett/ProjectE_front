@@ -30,7 +30,7 @@
 /* Estilos para los enlaces del menú */
 .navbar a {
   padding: 10px 20px; /* Puedes ajustar los valores según sea necesario */
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   color: #fff;

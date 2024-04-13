@@ -4,16 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(244, 102, 0, 0.979); /* Cambiamos el color a anaranjado */
+  background-color: rgba(244,102,0,0.979); /* Cambiamos el color a anaranjado */
   color: #fff;
   padding: 15px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
-  font-family: 'Arial', sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
+  font-family: "Arial", sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
 }
 
-.logo img {
-  width: 100px;
+.logo i{
+  font-size: 30px;
 }
-
 .categories-menu {
   list-style: none;
   display: flex;
@@ -22,14 +21,13 @@
 }
 
 .categories-menu li {
-  margin-right: 20px;
+  margin-right: 2px;
 }
-
 
 /* Eliminamos el subrayado de los enlaces */
 /* Estilos para los enlaces del menú */
 .navbar a {
-  padding: 10px 20px; /* Puedes ajustar los valores según sea necesario */
+  padding: 12px 20px; /* Puedes ajustar los valores según sea necesario */
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -39,6 +37,24 @@
 
 /* Estilos para los enlaces del menú al pasar el cursor */
 .navbar a:hover {
- background-color: orange;
+  background-color: orange;
+}
+.logo a {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
+.cart a {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.cart i{
+  font-size: 28px;
+}

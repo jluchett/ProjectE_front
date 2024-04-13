@@ -7,44 +7,43 @@ import SearchBar from "../searchBar/searchBar";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">
+      <section className="logo">
         <Link to="/">
-          <img src="ruta/al/logo.png" alt="Logo" />
+          <i className="material-icons">developer_mode</i>
+          <span>DevShop</span>
         </Link>
-      </div>
+      </section>
 
       <ul className="categories-menu">
-        {/* Usa Link en lugar de <a> */}
         <li>
-          <Link to="/categoria1">Categoría 1</Link>
+          <Link to="/categoria1">T-Shirts</Link>
         </li>
         <li>
-          <Link to="/categoria2">Categoría 2</Link>
+          <Link to="/categoria2">Accesorios</Link>
         </li>
-        {/* Agrega más categorías según tu necesidad */}
+        <li>
+          <Link to="/categoria2">Tecnologia</Link>
+        </li>
       </ul>
 
       <div className="best-sellers">
         <Link to="/best-sellers">Lo más vendido</Link>
       </div>
-
-      <SearchBar />
-
-      <div className="user">
-        <Link to="/perfil">Usuario</Link>
+      <section>
+        <SearchBar />
+      </section>
+      <section className="user">
+        <Link to="/perfil">Inicia sesion</Link>
+      </section>
+      <div className="like">
+        <Link to="/perfil">Favoritos</Link>
       </div>
-
-      <div className="language">
-        <select>
-          <option value="es">Español</option>
-          <option value="en">Inglés</option>
-          {/* Agrega más opciones de idioma según tu necesidad */}
-        </select>
-      </div>
-
-      <div className="cart">
-        <Link to="/carrito">Carrito</Link>
-      </div>
+      <section className="cart">
+        <Link to="/carrito">
+          <i className="material-icons">shopping_cart</i>
+        </Link>
+      </section>
+      
     </nav>
   );
 };

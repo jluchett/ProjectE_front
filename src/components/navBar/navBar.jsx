@@ -9,8 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <section className="logo">
         <Link to="/">
-          <i className="material-icons">developer_mode</i>
-          <span>DevShop</span>
+          <img src="/src/icons/LogoDS.png" alt="DevShop" />
         </Link>
       </section>
 

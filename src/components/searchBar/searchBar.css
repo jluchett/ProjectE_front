@@ -10,6 +10,7 @@
   border-radius: 20px;
   width: 300px;
   padding: 10px;
+  font-size: 18px;
 }
 
 .search-button {
@@ -20,7 +21,7 @@
   border-radius: 50px;
   position: relative;
   margin-left: -40px; /* Para superponer ligeramente el botón sobre el input */
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .search-button svg {

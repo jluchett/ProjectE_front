@@ -6,13 +6,11 @@
   align-items: center;
   background-color: rgba(244,102,0,0.979); /* Cambiamos el color a anaranjado */
   color: #fff;
-  padding: 15px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
+  padding: 10px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
   font-family: "Arial", sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
 }
 
-.logo i{
-  font-size: 30px;
-}
+
 .categories-menu {
   list-style: none;
   display: flex;
@@ -37,14 +35,14 @@
 
 /* Estilos para los enlaces del menú al pasar el cursor */
 .navbar a:hover {
-  background-color: orange;
+  background-color: rgb(177, 97, 31);
 }
 .logo a {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 0;
+  margin: 0;
 }
 
 .cart a {
@@ -57,4 +55,7 @@
 
 .cart i{
   font-size: 28px;
+}
+.logo img{
+  max-width: 120px;
 }

@@ -1,3 +1,4 @@
+// NavBar.jsx
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
@@ -12,37 +13,44 @@ const Navbar = () => {
           <img src="/src/icons/LogoDS.png" alt="DevShop" />
         </Link>
       </section>
-
-      <ul className="categories-menu">
-        <li>
-          <Link to="/categoria1">T-Shirts</Link>
-        </li>
-        <li>
-          <Link to="/categoria2">Accesorios</Link>
-        </li>
-        <li>
-          <Link to="/categoria2">Tecnologia</Link>
-        </li>
-      </ul>
-
-      <div className="best-sellers">
-        <Link to="/best-sellers">Lo más vendido</Link>
-      </div>
       <section>
-        <SearchBar />
+        <ul className="categories-menu">
+          <li>
+            <Link to="/categoria1">T-Shirts</Link>
+          </li>
+          <li>
+            <Link to="/categoria2">Accesorios</Link>
+          </li>
+          <li>
+            <Link to="/categoria2">Tecnologia</Link>
+          </li>
+          <li className="best-sellers">
+            <Link to="/best-sellers">Lo más vendido</Link>
+          </li>
+        </ul>
       </section>
+
+      <SearchBar />
+
       <section className="user">
-        <Link to="/perfil">Inicia sesion</Link>
+        <Link to="/perfil">
+          <i className="material-icons">account_circle</i>
+          <span>Inicia sesion</span>
+        </Link>
       </section>
+
       <div className="like">
-        <Link to="/perfil">Favoritos</Link>
+        <Link to="/perfil">
+          <i className="material-icons">favorites</i>
+          <span>Favoritos</span>
+        </Link>
       </div>
-      <section className="cart">
+
+      <div className="cart">
         <Link to="/carrito">
           <i className="material-icons">shopping_cart</i>
         </Link>
-      </section>
-      
+      </div>
     </nav>
   );
 };

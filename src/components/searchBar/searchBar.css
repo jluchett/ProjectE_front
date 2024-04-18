@@ -2,13 +2,14 @@
 
 .search-bar {
   display: flex;
-  position: relative;
+  flex-grow: 1; /* Permite que el SearchBar se expanda para ocupar el espacio disponible */
+  padding: 5px;
 }
 
 .search-input {
   border: none;
   border-radius: 20px;
-  width: 300px;
+  flex-grow: 1; /* Permite que el input se expanda para ocupar el espacio restante */
   padding: 10px;
   font-size: 18px;
 }
@@ -19,8 +20,7 @@
   background-color: #3f3f3f;
   width: 40px;
   border-radius: 50px;
-  position: relative;
-  margin-left: -40px; /* Para superponer ligeramente el botón sobre el input */
+  margin-left: -40px; /* Ajusta el margen izquierdo */
   transition: 0.3s ease;
 }
 
@@ -36,11 +36,8 @@
   transform: scale(0.95); /* Escala ligeramente el botón al hacer clic */
 }
 
-.search-button svg {
-  fill: #fff;
-}
 .search-button svg:hover {
-  fill: orange
+  fill: orange;
 }
 
 /* Animación de pulsación */

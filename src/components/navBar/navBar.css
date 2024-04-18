@@ -5,13 +5,15 @@
   align-items: center;
   background-color: rgba(244,102,0,0.979); /* Cambiamos el color a anaranjado */
   color: #fff;
-  padding: 10px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
-  font-family: "Arial", sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
+  padding: 0px 15px; /* Aumentamos el padding para hacer la barra más gruesa */
+  font-family: "Arial", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
+  width: 100%; /* Asegura que el navbar ocupe el ancho completo de su contenedor */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
 }
 
 .categories-menu {
   list-style: none;
-  display: flex;
+  display: flex;  
   margin: 0;
   padding: 0;
 }
@@ -23,7 +25,7 @@
 /* Eliminamos el subrayado de los enlaces */
 /* Estilos para los enlaces del menú */
 .navbar a {
-  padding: 12px 20px; /* Puedes ajustar los valores según sea necesario */
+  padding: 12px 5px; /* Puedes ajustar los valores según sea necesario */
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;

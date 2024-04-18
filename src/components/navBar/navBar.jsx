@@ -13,7 +13,7 @@ const Navbar = () => {
           <img src="/src/icons/LogoDS.png" alt="DevShop" />
         </Link>
       </section>
-      <section>
+      <section className="menus">
         <ul className="categories-menu">
           <li>
             <Link to="/categoria1">T-Shirts</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       <div className="like">
         <Link to="/perfil">
-          <i className="material-icons">favorites</i>
+          <i className="material-icons">favorite</i>
           <span>Favoritos</span>
         </Link>
       </div>

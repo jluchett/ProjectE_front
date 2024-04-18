@@ -1,4 +1,4 @@
-
+/*NavBar.css*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,6 @@
   padding: 10px 20px; /* Aumentamos el padding para hacer la barra más gruesa */
   font-family: "Arial", sans-serif; /* Cambiamos la fuente a Arial o cualquier otra que prefieras */
 }
-
 
 .categories-menu {
   list-style: none;
@@ -30,6 +29,7 @@
   font-weight: bold;
   color: #fff;
   transition: background-color 0.3s ease; /* Transición suave */
+  white-space: nowrap; /* Evita que el texto se envuelva a la siguiente línea */
 }
 
 /* Estilos para los enlaces del menú al pasar el cursor */
@@ -41,7 +41,7 @@
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   padding: 0;
-  margin: 0;
+  margin-right: 5px;
 }
 
 .cart a {
@@ -57,4 +57,39 @@
 }
 .logo img{
   max-width: 120px;
+}
+.user {
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  text-align: center; /* Centramos el texto */
+}
+
+.user a {
+  display: flex;
+  flex-direction: column; /* Aseguramos que el icono y el texto estén en columnas */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  text-align: center; /* Centramos el texto */
+}
+
+.user i {
+  font-size: 24px; /* Tamaño del icono */
+}
+
+.like {
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  text-align: center; /* Centramos el texto */
+}
+
+.like a {
+  display: flex;
+  flex-direction: column; /* Aseguramos que el icono y el texto estén en columnas */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  text-align: center; /* Centramos el texto */
+}
+
+.like i {
+  font-size: 24px; /* Tamaño del icono */
 }

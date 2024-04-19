@@ -13,6 +13,11 @@ const Navbar = () => {
           <img src="/src/icons/LogoDS.png" alt="DevShop" />
         </Link>
       </section>
+      <section >
+        <button className="menu-toggle">
+          <i className="material-icons">menu</i>
+        </button>
+      </section>
       <section className="menus">
         <ul className="categories-menu">
           <li>
@@ -24,10 +29,11 @@ const Navbar = () => {
           <li>
             <Link to="/categoria2">Tecnologia</Link>
           </li>
-          <li className="best-sellers">
-            <Link to="/best-sellers">Lo más vendido</Link>
-          </li>
         </ul>
+      </section>
+
+      <section className="best-sellers">
+        <Link to="/best-sellers">Lo más vendido</Link>
       </section>
 
       <SearchBar />

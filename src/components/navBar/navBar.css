@@ -95,3 +95,42 @@
 .like i {
   font-size: 24px; /* Tamaño del icono */
 }
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 10px;
+  display: none;
+}
+.menu-toggle :hover {
+  background-color:rgb(177, 97, 31) ;
+}
+.menu-toggle i {
+  padding: 12px 5px; /* Puedes ajustar los valores según sea necesario */
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+/* Ajustes para NavBar cuando la ventana es más pequeña que 1027px de ancho */
+@media screen and (max-width: 1026px) {
+  .like span {
+    display: none; /* Oculta el contenedor de favoritos */
+  }
+}
+@media screen and (max-width: 978px) {
+  .best-sellers {
+    display: none; /* Oculta el contenedor de favoritos */
+  }
+}
+@media screen and (max-width: 850px) {
+  .menus{
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
